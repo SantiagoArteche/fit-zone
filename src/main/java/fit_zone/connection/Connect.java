@@ -1,4 +1,4 @@
-package zona_fit.connection;
+package fit_zone.connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 public class Connect {
     public static Connection getConnection(){
     Connection connection = null;
-    String bdd = "zona_fit";
+    String bdd = "fit_zone";
     String url = "jdbc:mysql://localhost:3306/" + bdd;
     String user = "root";
     String password = "santimysql";

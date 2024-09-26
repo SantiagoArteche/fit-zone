@@ -1,7 +1,6 @@
-package zona_fit;
+package fit_zone.domain;
 
 import java.util.Objects;
-import java.util.concurrent.RecursiveTask;
 
 public class Client {
     private int id;

@@ -1,7 +1,7 @@
-package zona_fit.data;
+package fit_zone.data;
 
-import zona_fit.Client;
-import static zona_fit.connection.Connect.getConnection;
+import fit_zone.domain.Client;
+import static fit_zone.connection.Connect.getConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -41,8 +41,7 @@ public class ClientDAO implements IClientDAO {
 
         return clients;
     }
-    public boolean searchClientById(Client client){
-
+    public boolean findClientById(Client client){
         PreparedStatement ps;
         ResultSet rs;
         Connection connection = getConnection();
